@@ -33,4 +33,5 @@ spec:
     enabled: true
     namespace: od
   logFormat: basic
-  configurations: ["mqpolicy", "key.jks", "httpsconf", "scramparms"]
+  configurations: [ "key.jks", "httpsconf", "scramparms"]
+  #configurations: ["mqpolicy", "key.jks", "httpsconf", "scramparms"]
