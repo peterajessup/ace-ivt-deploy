@@ -1,11 +1,30 @@
-ResourceManagers: 
-  HTTPSConnector:
+#ResourceManagers: 
+#  HTTPSConnector:
     #ListenerPort: 0                 # Set non-zero to set a specific port, defaults to 7843
     #ListenerAddress: '0.0.0.0'      # Set the IP address for the listener to listen on. Default is to listen on all addresses
     #ReqClientAuth: true
     #KeyAlias: ''
     #KeyPassword: 'P4s5w0rd'         # Set the password or alias to the password of the key
-    KeystoreFile: '/home/aceuser/keystores/key.jks'
-    KeystorePassword: 'password'    # Set the password or alias to the password of the keystore
-    KeystoreType: 'JKS'             # Set the keystore type, can be 'JKS' or 'P12'. Default is JKS.
+#    KeystoreFile: '/home/aceuser/keystores/key.jks'
+#    KeystorePassword: 'password'    # Set the password or alias to the password of the keystore
+#    KeystoreType: 'JKS'             # Set the keystore type, can be 'JKS' or 'P12'. Default is JKS.
 #remoteDefaultQueueManager: '{MQPolicy}:DefaultQM'
+BrokerRegistry:
+  mqKeyRepository: '/home/aceuser/key'
+EnvironmentVariables:
+  MQSI_TENANT_AUTH_URL: 'dev3553628'           # Set the named Environment Variable to the provided value for this server
+  MQSI_TENANT_ID: 'dev3553628'
+  OpenTelemetryManager:
+    openTelemetryEnabled: true          # Enable or disable OpenTelemetry tracing.
+    #openTelemetryServiceName: ''         # Override the Service Name attribute for telemetry spans. Defaults to integration server name.
+    #openTelemetryHostName: ''            # Override the value of the Hostname attribute for telemetry spans.
+    exporterOtlpGrpcEndpoint: 'https://uhm.a-vir-r1.e2em.ipaas.automation.ibm.com:443'         # Specify a GRPC endpoint to which OpenTelemetry span data is sent. For example, '<hostname>:4317'.
+    #exporterOtlpHttpUrl: ''              # Specify a HTTP Url to which OpenTelemetry span data (json) is sent. For example, 'http://<hostname>:<port>/v1/traces'.
+    #openTelemetryHttpSecurityId: ''      # Specify an opentelemetry credential used in the HTTP exporter.
+    openTelemetryGrpcSecurityId: 'otelcred2'      # Specify an opentelemetry credential used in the GRPC exporter.
+    #openTelemetryTruststoreType: ''      # The type of the open telemetry truststore [PKCS12, PEM or JKS]. Only used for the GRPC exporter.
+    #openTelemetryTruststoreFile: ''      # The location of the open telemetry truststore. Only used for the GRPC exporter.
+    #openTelemetryTruststorePass: ''      # Credential or resource alias containing the truststore password. Only used for the GRPC exporter.
+    #openTelemetryTrustAlias: ''          # The alias of the trust certificate in the PKCS12 or JKS truststore.
+    openTelemetrySpanProcessor: 'simple'  # Specify the OpenTelemetry span processor ['batch' or 'simple'].
+    #openTelemetryBatchSpanOptions: ''    # Specify the OpenTelemetry batch span processor options. For example, 'max_queue_size=4096:schedule_delay_millis=5000:max_export_batch_size=4096'
