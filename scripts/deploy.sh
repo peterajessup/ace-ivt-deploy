@@ -1,9 +1,15 @@
 oc project ace
 
-oc delete Configuration key.jks
-oc delete Configuration scramparms
+oc delete Configuration key.kdb
+oc delete Configuration keyparms
 oc delete Configuration httpsconf
 oc delete Configuration mqpolicy
+oc delete Configuration key.rdb
+oc delete Configuration key.sth
+oc delete Configuration otelarchive
+oc delete Configuration otelarchivekey
+oc delete Configuration mqpolicy
+
 
 set -e
 
