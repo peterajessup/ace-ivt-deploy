@@ -30,5 +30,5 @@ spec:
   designerFlowsOperationMode: disabled
   adminServerSecure: false
   logFormat: basic
-  configurations: [ "key.kdb", "key.sth","key.rdb","otelarchive","otelarchivekey","httpsconf", "keyparms", "mqpolicy"]
+  configurations: [ "key.kdb", "key.sth","key.rdb","otelarchive","otelarchivekey","httpsconf", "keyparms", "mqpolicy", "hipaasagenta"]
   #configurations: ["mqpolicy", "key.jks", "httpsconf", "scramparms"]
