@@ -22,7 +22,7 @@ spec:
     license: L-KPRV-AUG9NC
     use: CloudPakForIntegrationNonProduction
   enableMetrics: true
-  barURL: 'https://db-01-quickstart-dash.ace:3443/v1/directories/leads?38437a19-6b4f-4c07-b684-b6e5646c4809'
+  barURL: ["https://db-01-quickstart-dash.ace:3443/v1/directories/leads?38437a19-6b4f-4c07-b684-b6e5646c4809"]
   replicas: 1
   service:
     endpointType: https
