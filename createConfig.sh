@@ -7,7 +7,7 @@ echo "kind: Configuration" >> oc.dat
 echo "metadata:" >> oc.dat
 echo "  name: ${crname}" >> oc.dat
 echo "spec:" >> oc.dat
-(echo -n "  contents: "; base64 ${crfile}) | tr -d "\n"  >> oc.dat
+(echo -n "  contents: "; base64 -i ${crfile}) | tr -d "\n"  >> oc.dat
 echo "" >> oc.dat
 echo "  type: ${crtype}" >> oc.dat
 echo "---" >> oc.dat 
