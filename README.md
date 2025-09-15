@@ -12,14 +12,20 @@ The following artefacts are provided.
 
 Configurations:
 key.* - Provides the keystore for the integration runtime for secure connections to a MQ queue manager - the Queue manager repo highlighted below will work with this keystore for secure connections.
-MQPolicy.zip - an policy overide file to allow modification of the MQ endpoint wtihout changes to the source flow. You will need to modify this to point to the queue manager host as a minimum when you use the Queue manger repo below
+
+MQPolicy.zip - an policy overide file to allow modification of the MQ endpoint wtihout changes to the source flow. You will need to modify this to point to the queue manager host as a minimum when you use the Queue manger repo below.
+
 agenta.json - an agent config file for connection to the HiPaaS for remote admin and advertising of the callable flow. This will change based on your own switch location in the iPaaS tenant.
+
 mqsivaultarchive - the vault which contains the configuration for the api key to connect to the monitoring endpoint. You will need to modify this based on your tenant api key. 
 server.conf.yaml - contains the 
+
   - configuration yaml for the keystore location which uses the default location in the container. 
   - environment variables for the iPaaS tenant - You will need to set these to your own tenant value.
   - OpenTelemetry manager settings for the integration runtime - You will need to determine the appropiate settings for the tenant.
+
 dbparms - not used in this demo
+
 vaultarchivekey  - password for the included vault described above - The vault configuration will determine this. See https://www.ibm.com/docs/en/app-connect/13.0.x?topic=runtimes-vault-archive-type
 
 Note that the repo here: https://github.com/peterajessup/mq-deploy-cp4i/ is used to depoly the queue manager for the ACE runtime. You can use this as-is or use the configuration to create your own.
