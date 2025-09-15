@@ -38,9 +38,9 @@ Installation: (Assumes a working CP4i installation on Openshift with the ACE ope
 4. Clone the repo.
 5. run the installtion scipt scripts/deploy.sh
 6. Add the runtime to your tenant (optional)
-7. You should see a callable flow called 'MK1' available to be used in ACE and Webmethods runtimes.
+7. You should see a callable flow called 'MK1' available to be used in ACE and webMethods flows.
 8. Sending any message to this callable flow will result in a message in the queue called 'IVT.Q' on the configured queue manager.
-9. Full tracing down to the MQ Output Node on the callable flow should be seen.
+9. Full end to end tracing down to the MQ Output Node on the callable flow should be seen.
 
 
 
