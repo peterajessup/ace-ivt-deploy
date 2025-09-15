@@ -30,10 +30,10 @@ vaultarchivekey  - password for the included vault described above - The vault c
 
 Note that the repo here: https://github.com/peterajessup/mq-deploy-cp4i/ is used to depoly the queue manager for the ACE runtime. You can use this as-is or use the configuration to create your own.
 
-Installation: (Assumes a working CP4i installation on Openshift with the ACE operator installed. The demo uses the ACE dashboard for Bar file storage.
+Installation: (Assumes a working CP4i installation on Openshift with the ACE operator installed. The demo uses the ACE dashboard for Bar file storage.)
 1. Create the project 'ace'
-2. Create a Dashboard instance to store the bar file (not covered here). 
-see here: https://www.ibm.com/docs/en/app-connect/13.0.x?topic=dashboard-managing-bar-files
+2. Create a Dashboard instance to store the bar file (not covered here) - see here: https://www.ibm.com/docs/en/app-connect/13.0.x?topic=dashboard-managing-bar-files
+
 3. Upload the bar file and note the barUrl name. Note that you need to update the following in the yaml/aceIVTdeploy.yaml _barURL: ["https://<ace_dashboard_name>:3443/v1/directories/xxxx]_
 4. Clone the repo.
 5. run the installtion scipt scripts/deploy.sh
