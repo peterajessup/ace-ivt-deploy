@@ -6,7 +6,7 @@ The artifacts include an Integration Runtime Custom resource definition for depl
 Control Plane.
 
 The Bar file contains an ACE fow to expose a callable input which writes a message to  queue manger to simulate integration with a backend. This
-keeps the scenario simple but allows OTEL trace from the MQ poutput node to take part in an end to end tarnsaction monitoring scenario.
+keeps the scenario simple but allows OTEL trace from the MQ output node to take part in an end to end transaction monitoring scenario.
 
 The following artefacts are provided.
 
