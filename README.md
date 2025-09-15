@@ -1,4 +1,4 @@
-# cp4idemoace
+# ACE Hybrid iPaaS Demo
 
 This repository is to be used for creating an ACE Integration Server on OCP, version 4.x, with IBM's Cloudpak for Integration Installed.
 
@@ -6,7 +6,7 @@ The artifacts include an Integration Runtime Custom resource definition for depl
 Control Plane.
 
 The Bar file contains an ACE fow to expose a callable input which writes a message to  queue manger to simulate integration with a backend. This
-keeps the scenario simple but allows OTEL trace from the MQ output node to take part in an end to end transaction monitoring scenario.
+keeps the scenario simple but allows OTEL trace from the MQ output node to take part in an end to end transaction monitoring scenario to highlight on-premises components taking part in the tracing.
 
 The following artefacts are provided.
 
