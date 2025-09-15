@@ -24,7 +24,7 @@ vaultarchivekey  - password for the included vault described above - The vault c
 
 Note that the repo here: https://github.com/peterajessup/mq-deploy-cp4i/ is used to depoly the queue manager for the ACE runtime. You can use this as-is or use the configuration to create your own.
 
-Installation: (Assumes a working CP4i installation on Openshift with the ACE operator installed.
+Installation: (Assumes a working CP4i installation on Openshift with the ACE operator installed. The demo uses the ACE dashboard for Bar file storage.
 1. Create the project 'ace'
 2. Create a Dashboard instance to store the bar file (not covered here). 
 see here: https://www.ibm.com/docs/en/app-connect/13.0.x?topic=dashboard-managing-bar-files
@@ -34,10 +34,10 @@ see here: https://www.ibm.com/docs/en/app-connect/13.0.x?topic=dashboard-managin
 6. Add the runtime to your tenant (optional)
 7. You should see a callable flow called 'MK1' available to be used in ACE and Webmethods runtimes.
 8. Sending any message to this callable flow will result in a message in the queue called 'IVT.Q' on the configured queue manager.
-9. Ful tracing down to the MQ Output Node on the callable flow should be seen.
+9. Full tracing down to the MQ Output Node on the callable flow should be seen.
 
 
 
 ```
 
- (The demo uses the ACE dashboard for Bar file storage).
+
