@@ -14,7 +14,7 @@ spec:
           requests:
             cpu: '1'
             memory: 2Gi
-  version: 13.0.4.0-r1
+  version: 13.0.6.2-r1
   imagePullSecrets:
     name: ibm-entitlement-key
   license:
