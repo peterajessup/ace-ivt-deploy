@@ -9,6 +9,17 @@
 #    KeystorePassword: 'password'    # Set the password or alias to the password of the keystore
 #    KeystoreType: 'JKS'             # Set the keystore type, can be 'JKS' or 'P12'. Default is JKS.
 #remoteDefaultQueueManager: '{MQPolicy}:DefaultQM'
+RestAdminListener:
+  port: 7601                # Set the Admin REST API Port for ACE Web UI and Toolkit or -1 to disable. Defaults to 7600.
+
+  #host: 'localhost'         # Set the hostname otherwise we bind to the unspecified address
+
+  # SSL Server auth
+  sslMode: 'disabled' # Sets whether to enable https for the RestAdminListener. Valid values are 'automatic', 'disabled'. The default is 'automatic'.
+MCP:
+  Admin:
+    enabled: true                 # Start MCP server and register ACE administration tools
+    port: 7650                     # Port number for MCP server
 BrokerRegistry:
   mqKeyRepository: '/home/aceuser/keystores/key'
 EnvironmentVariables:
